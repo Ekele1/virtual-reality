@@ -60,3 +60,16 @@ body {
 .glowing-pink-border:hover::before {
   opacity: 0.5;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatex(-100%);
+  }
+}
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+  animation-delay: -10s; /* Start midway through animation */
+}
